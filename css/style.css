@@ -1,0 +1,395 @@
+@font-face {
+  font-family: DINPro;
+  src: url(../Fonts/DINPro.woff);
+}
+@font-face {
+  font-family: DINPro-Bold;
+  src: url(../Fonts/DINPro-Bold.woff);
+}
+@font-face {
+  font-family: Azur-Normal;
+  src: url(../Fonts/Wiescher\ Design\ -\ Azur\ Normal.woff);
+}
+@font-face {
+  font-family: Azur-Light;
+  src: url(../Fonts/Wiescher\ Design\ -\ Azur\ Light.woff);
+}
+:root {
+  --din-pro: DINPro;
+  --din-pro-bold: DINPro-Bold;
+  --azur-normal: Azur-Normal;
+  --azur-light: Azur-Light;
+  --yellow: #ffa300;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--din-pro);
+}
+.container {
+  width: 78%;
+  margin: auto;
+}
+h1 {
+  font-family: var(--azur-light);
+  font-size: 48px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 10px;
+}
+button {
+  font-family: var(--din-pro);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.net {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  pointer-events: none !important;
+}
+.swiper-slide .swiper-button-next,
+.swiper-slide .swiper-button-prev {
+  color: var(--yellow);
+  width: 140px;
+}
+.swiper-slide .swiper-button-next::before,
+.swiper-slide .swiper-button-prev::before {
+  font-family: var(--azur-normal);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-align: end;
+  color: white;
+}
+.swiper-slide .swiper-button-prev::before {
+  text-align: start;
+}
+.swiper-slide .swiper-button-next {
+  right: 62px !important;
+}
+.swiper-slide .swiper-button-prev {
+  left: 62px !important;
+}
+.swiper-slide .swiper-button-next::before {
+  margin-right: 30px;
+}
+.swiper-slide .swiper-button-prev::before {
+  margin-left: 30px;
+}
+.swiper-pagination-bullet {
+  background-color: #4d4d4d !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--yellow) !important;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}
+main img {
+  margin-top: 90px;
+  width: 130px;
+}
+main h1 {
+  margin-top: 70px;
+}
+main p {
+  max-width: 850px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+main .buttons {
+  margin-top: 65px;
+}
+main button {
+  width: 150px;
+  height: 37.5px;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 3px;
+  margin-right: 15px;
+  background-color: black;
+  border-radius: 4px;
+}
+.trillion-dollar {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/trillion-dollar-bg.png);
+  background-size: cover;
+  color: white;
+}
+.trillion-dollar .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  padding-bottom: 50px;
+}
+
+.trillion-dollar .swiper-slide:first-of-type .swiper-button-next::before {
+  content: 'HEADING THE ROYAL AIRFORE';
+  margin-right: 30px;
+}
+.trillion-dollar .swiper-slide:nth-of-type(2) .swiper-button-prev::before {
+  content: 'DISRUPTING A TRILLION DOLLAR INDUSTRY';
+  order: 3;
+}
+.trillion-dollar .swiper-slide:nth-of-type(2) .swiper-button-next::before {
+  content: 'HEADING A QUOTE FROM GOVERNEMNT';
+}
+.trillion-dollar .swiper-slide:nth-of-type(3) .swiper-button-prev::before {
+  content: 'HEADING THE ROYAL AIRFORE';
+  order: 3;
+}
+.trillion-dollar p {
+  width: 57%;
+  font-size: 30px;
+  margin-top: 40px;
+}
+.trillion-dollar .reference {
+  color: var(--yellow);
+  margin-top: 20px;
+}
+.traction {
+  height: 100vh;
+}
+.traction .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.traction h1 {
+  margin-top: 200px;
+}
+.traction p:first-of-type {
+  margin-top: 45px;
+}
+.traction p {
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.traction p:last-of-type {
+  margin-bottom: 0px;
+}
+.traction .line {
+  width: 70px;
+  height: 3px;
+  background: black;
+  border-radius: 10px;
+}
+.videos .container {
+  width: 100%;
+}
+.videos .swiper-videos {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.videos .swiper-slide {
+  width: 100%;
+}
+.videos .swiper-slide .swiper-button-next,
+.videos .swiper-slide .swiper-button-prev {
+  color: var(--yellow);
+  width: 210px;
+}
+.videos .swiper-slide .swiper-button-next::before,
+.videos .swiper-slide .swiper-button-prev::before {
+  letter-spacing: 2px;
+}
+.videos .swiper-slide .swiper-button-next {
+  right: 15% !important;
+}
+.videos .swiper-slide .swiper-button-prev {
+  left: 15% !important;
+}
+.videos .swiper-slide:first-of-type .swiper-button-next::before {
+  content: "'REMOVING HUMANS' FROM DELIVERY SERVICES BBC - LONDON";
+  margin-right: 30px;
+}
+.videos .swiper-slide:nth-of-type(2) .swiper-button-prev::before {
+  content: "'REMOVING HUMANS' FROM DELIVERY SERVICES BBC - LONDON";
+  order: 3;
+}
+.videos .swiper-slide:nth-of-type(2) .swiper-button-next::before {
+  content: "'REMOVING HUMANS' FROM DELIVERY SERVICES BBC - LONDON";
+}
+.videos .swiper-slide:nth-of-type(3) .swiper-button-prev::before {
+  content: "'REMOVING HUMANS' FROM DELIVERY SERVICES BBC - LONDON";
+  order: 3;
+}
+.videos .pagination-videos {
+  position: absolute;
+  bottom: 100px;
+}
+.videos video {
+  width: 100%;
+}
+.swiper-highlightes {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.highlightes .swiper-slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlightes .swiper-slide h1 {
+  margin-top: 100px;
+}
+.highlightes .swiper-slide p {
+  font-size: 30px;
+  max-width: 557px;
+  margin-top: 30px;
+}
+.highlightes .swiper-slide img {
+  width: 750px;
+  margin-top: -120px;
+  margin-left: -150px;
+}
+.highlightes .pagination-highlightes {
+  position: absolute;
+  bottom: 80px;
+}
+.currently {
+  background-color: black;
+  color: white;
+}
+.currently .container {
+  max-width: 700px;
+}
+.currently .we-currently {
+  font-size: 45px;
+  padding-top: 140px;
+}
+.currently .statistics {
+  display: flex;
+  justify-content: space-between;
+}
+.currently .statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.currently .statistic .number {
+  font-family: var(--din-pro-bold);
+  font-size: 64px;
+  margin-top: 50px;
+}
+.currently .statistic .desc {
+  font-size: 18px;
+}
+.currently .statistic button {
+  width: 335px;
+  height: 70px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 33px;
+}
+.currently .current-investors button {
+  text-align: start;
+  background-color: white;
+  padding-left: 25px;
+}
+.currently .minimum-valuation button {
+  background-color: var(--yellow);
+}
+.currently .purchased {
+  font-size: 19px;
+  margin-top: 20px;
+  padding-bottom: 130px;
+}
+.currently .purchased span {
+  font-family: var(--din-pro-bold);
+}
+.call-actions {
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+.call-actions .main-p {
+  max-width: 835px;
+  font-size: 45px;
+  margin: auto;
+}
+.call-actions .call-actions-col {
+  max-width: 515px;
+  margin: auto;
+}
+.call-actions .black-cols {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.call-actions .black-col {
+  max-width: 150px;
+}
+.call-actions .black-col button {
+  width: 100%;
+  height: 37.5px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+}
+.call-actions .download {
+  margin-top: 40px;
+}
+.yellow-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.yellow-buttons button {
+  width: 150px;
+  height: 37.5px;
+  font-size: 14px;
+  background-color: var(--yellow);
+  border-radius: 4px;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  z-index: 11111;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-logo {
+  width: 100px;
+}
+footer .link {
+  font-family: var(--azur-light);
+  font-size: 48px;
+  letter-spacing: 7px;
+  margin-top: 15px;
+}
+footer .link.active {
+  color: var(--yellow);
+}
+footer .link:first-of-type {
+  margin-top: 40px;
+}
+footer .rights {
+  margin-top: 70px;
+}
